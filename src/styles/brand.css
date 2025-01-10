@@ -1,0 +1,59 @@
+:root {
+  /* Primary Colors */
+  --brand-primary: #3b82f6; /* Blue 500 */
+  --brand-primary-hover: #2563eb;
+  --brand-primary-light: #60a5fa;
+  --brand-primary-dark: #1d4ed8;
+
+  /* Secondary Colors */
+  --brand-secondary: #2563eb; /* Blue 600 */
+  --brand-secondary-hover: #1d4ed8;
+  --brand-secondary-light: #3b82f6;
+  --brand-secondary-dark: #1e40af;
+
+  /* Slate Colors */
+  --brand-slate-50: #f8fafc;
+  --brand-slate-100: #f1f5f9;
+  --brand-slate-200: #e2e8f0;
+  --brand-slate-300: #cbd5e1;
+  --brand-slate-400: #94a3b8;
+  --brand-slate-500: #64748b;
+  --brand-slate-600: #475569;
+  --brand-slate-700: #334155;
+  --brand-slate-800: #1e293b;
+  --brand-slate-900: #0f172a;
+
+  /* Theme Colors */
+  --brand-dark: #f8fafc; /* Slate 50 */
+  --brand-light: #1e293b; /* Slate 800 */
+
+  /* Text Colors */
+  --text-primary: var(--brand-slate-900);
+  --text-secondary: var(--brand-slate-700);
+  --text-muted: var(--brand-slate-500);
+  --text-light: var(--brand-slate-300);
+
+  /* Fonts */
+  --brand-font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --brand-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  /* Spacing */
+  --spacing-base: 1rem;
+  --spacing-xs: calc(var(--spacing-base) * 0.25);
+  --spacing-sm: calc(var(--spacing-base) * 0.5);
+  --spacing-lg: calc(var(--spacing-base) * 1.5);
+  --spacing-xl: calc(var(--spacing-base) * 2);
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: var(--brand-slate-100);
+    --text-secondary: var(--brand-slate-300);
+    --text-muted: var(--brand-slate-500);
+    --text-light: var(--brand-slate-700);
+  }
+}

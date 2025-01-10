@@ -1,0 +1,5 @@
+# Handle client-side routing
+/*    /index.html   200
+
+# Handle Reddit OAuth callback
+/auth/reddit/callback    /index.html   200
